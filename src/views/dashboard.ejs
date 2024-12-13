@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div><h1 class="titulo">Superhéroes</h1></div>
+    <button class="button-agregar" value="">Agregar Superhéroe</button>
+    <div class="card__container">
+    <% superheroes.forEach(heroe =>{ %>
+        <div class="card">
+            <h2><%= heroe.nombreSuperheroe %></h2>
+            <ul>
+                <li><b>Nombre real: </b><%= heroe["nombreReal"] %></li>
+                <li><b>Edad:</b> <%= heroe.edad %></li>
+                <li><b>Poderes:</b> <%= heroe.poderes.join(", ") %></li>
+                <li><b>Planeta de origen:</b> <%= heroe.planetaOrigen %></li>
+            </ul>
+            <div class="button-container">
+                <button class="button-editar" id="editar-<%= heroe.id %>" value="<%= heroe.id %>">Editar </button>
+                <button class="button-eliminar" id="eliminar-<%= heroe.id %>"  value="<%= heroe.id %>"> Eliminar </button>
+            </div>
+        </div>
+        
+        <!-- <input type="button"  id="<%= 'btn' + heroe.id %>" value="Editar" onclick="editarSuperheroe(<%= heroe.id %>)"> -->
+        <!-- <input type="button"  id="<%= heroe.id %>" value="Editar" > -->
+   <%  }) %>
+</div>
+   <script src="/js/dashboardScripts.js"> </script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fedb0e;
+    margin: 0;
+    padding: 20px;
+}
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo {
+    text-align: center;
+    color: #0a1c20;
+    margin-bottom: 30px;
+}
+.card__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.card {
+    background-color: #41a6de;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+    box-sizing: border-box;
+}
+.card h2 {
+    color: #0a1c20;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.card p {
+    color: #d01e00;
+    margin-bottom: 20px;
+}
+ul, ol {
+    list-style-type: none; /* Quita las viñetas de las listas */
+    align-items: start;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+.button-editar  {
+    background-color: #f6343c;
+    color: white;
+}
+.button-eliminar {
+    background-color: #f6343c;
+    color: white;
+}
+.button-agregar {
+    margin-left: 100px;
+    margin-bottom: 20px;
+    background-color: #43a31ce5;
+    color: white;
+}
+.button:hover {
+    opacity: 0.8;
+}
+
+.formulario__container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.formulario__grupo {
+    margin-bottom: 20px;
+}
+.formulario__grupo label {
+    display: block;
+    margin-bottom: 5px;
+    color: #0a1c20;
+    font-weight: bold;
+}
+.formulario__grupo input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.boton-editar , .boton-agregar{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #41a6de;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    margin-top: 20px;
+}
+.boton-editar , .boton-agregar:hover {
+    opacity: 0.8;
+}
